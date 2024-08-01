@@ -1,240 +1,95 @@
 import React, { useState } from "react";
-import img1 from "../assets/images/png/img1.png";
+import { tabData } from "./common/Helper";
 
 const WorkData = () => {
-  const [tabs, setTabs] = useState("tab1");
+  const [currentTab, setCurrentTab] = useState("Jan");
 
-  const HANDLE_CLICK = (tab) => {
-    setTabs(tab);
+  const HANDLE_TAB_CLICK = (tabBtn) => {
+    setCurrentTab(tabBtn);
   };
 
   return (
     <div className="container-fluid">
       <div className="d-flex">
+        {/* ======nav-tabs===== */}
         <div className="nav_tabs d-flex justify-content-center">
           <div className="tabs d-flex gap-2 flex-column w_100 mt-5">
-            <p className="">rinklepoonia 471</p>
-            <button
-              className={`${tabs === "tab1" ? "" : ""}`}
-              onClick={() => HANDLE_CLICK("tab1")}
-            >
-              may
-            </button>
-            <button
-              className={`${tabs === "tab2" ? "" : ""}`}
-              onClick={() => HANDLE_CLICK("tab2")}
-            >
-              june
-            </button>
-            <button
-              className={`${tabs === "tab3" ? "" : ""}`}
-              onClick={() => HANDLE_CLICK("tab3")}
-            >
-              july
-            </button>
+            <p className="text-center">rinklepoonia 471</p>
+            {tabData.map((obj, index) => (
+              <a
+                key={index}
+                href={`/${obj.tabBtn}`}
+                className={`px-5 d-flex justify-content-center ${
+                  currentTab === obj.tabBtn
+                    ? "bg-black text-white"
+                    : "bg-white text-black"
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  HANDLE_TAB_CLICK(obj.tabBtn);
+                }}
+              >
+                {obj.tabBtn}
+              </a>
+            ))}
           </div>
         </div>
-        {tabs === "tab1" && (
-          <div className="work_data mt-5 ms-5">
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-        {tabs === "tab2" && (
-          <div className="work_data mt-5 ms-5">
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
+        {/* =======work-data===== */}
+        <div className="work_data mt-5 ms-5">
+          {tabData
+            .find((tab) => tab.tabBtn === currentTab)
+            ?.content.map((item, index) => (
+              <div
+                key={index}
+                className="d-flex gap-4 align-items-start pt-4 ps-4"
+              >
+                <img
+                  className="w-100 max_w_200 h_100 object-fit-fill img_radius"
+                  src={item.img}
+                  alt="img"
+                />
+                <div className="d-flex flex-column">
+                  <div className="d-flex flex-column">
+                    GitHub :-
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-normal"
+                    >
+                      {item.github}
+                    </a>
+                  </div>
+                  {item.liveLink && (
+                    <div className="d-flex flex-column">
+                      Live-link :-
+                      <a
+                        href={item.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-normal"
+                      >
+                        {item.liveLink}
+                      </a>
+                    </div>
+                  )}
+                  {item.figmaLink && (
+                    <div className="d-flex flex-column">
+                      <span className="text-nowrap">figma-link :-</span>
+                      <a
+                        href={item.figmaLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-normal"
+                      >
+                        {item.figmaLink}
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-        {tabs === "tab3" && (
-          <div className="work_data mt-5 ms-5">
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex gap-4 align-items-center pt-4 ps-4">
-              <img className="max-w-300" src={img1} alt="img1" />
-              <div className="d-flex flex-column">
-                <div className="d-flex">
-                  git hub =
-                  <a
-                    href="https://github.com/rinklepoonia/cv-hawk"
-                    target="_blank"
-                  >
-                    https://github.com/rinklepoonia/cv-hawk
-                  </a>
-                </div>
-                <div className="d-flex">
-                  live-link =
-                  <a target="_blank" href="https://quanticx.vercel.app/">
-                    https://quanticx.vercel.app/
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+            ))}
+        </div>
       </div>
     </div>
   );
