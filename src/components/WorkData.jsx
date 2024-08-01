@@ -19,7 +19,7 @@ const WorkData = () => {
               <a
                 key={index}
                 href={`/${obj.tabBtn}`}
-                className={`px-5 d-flex justify-content-center ${
+                className={`px-5 d-flex justify-content-center radius_12 ${
                   currentTab === obj.tabBtn
                     ? "bg-black text-white"
                     : "bg-white text-black"

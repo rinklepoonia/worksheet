@@ -10,6 +10,9 @@
 .h_100 {
   height: 100px;
 }
+.radius_12 {
+  border-radius: 12px;
+}
 
 .max-w-300 {
   max-width: 150px;
