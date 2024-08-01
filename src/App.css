@@ -18,7 +18,7 @@
   max-width: 150px;
 }
 .nav_tabs {
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
   box-shadow: 0px 2px 48px 0px #00000014;
   min-height: 100vh;
@@ -27,8 +27,8 @@
   width: 100px;
 }
 .work_data {
-  width: 1000px;
-  box-shadow: 0px 4px 32px 0px #00000014;
+  max-width: 1100px;
+  box-shadow: 0px 2px 48px 0px #00000014;
 }
 .img_radius {
   border-radius: 20px;
