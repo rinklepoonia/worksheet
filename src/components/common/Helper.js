@@ -212,7 +212,7 @@ export const tabData = [
       {
         img: quanticImg,
         github: "https://github.com/rinklepoonia/quanticx",
-        liveLink: "https://vercel.com/rinkles-projects/quanticx",
+        liveLink: "https://quanticx.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/wS8nztlVlsZ7Q3zI68ZIOm/QuanticX-ad-templets-(Copy)?node-id=0-1&t=EEjzj06f0yA8yVl7-0",
       },
