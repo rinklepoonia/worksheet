@@ -28,6 +28,13 @@ import iDoxImg from "../../assets/images/png/i-dox.png";
 import travelClubImg from "../../assets/images/svg/travel-club.svg";
 import cvImg from "../../assets/images/svg/cv-img.svg";
 import hyperleenImg from "../../assets/images/png/hyperleen-img.png";
+import vpnFutureImg from "../../assets/images/png/vpn-future.png";
+import ringSideHealth from "../../assets/images/png/ring-side-health.png";
+import catImg from "../../assets/images/png/cat.png";
+import cryptoImgTemp from "../../assets/images/png/Email Template.png";
+import pometeryImg from "../../assets/images/png/pometery.png";
+import herbertImg from "../../assets/images/png/herbert.png";
+
 export const tabData = [
   {
     tabBtn: "Jan",
@@ -229,6 +236,55 @@ export const tabData = [
         liveLink: "https://hyperleen-next.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/tPdm4cddHzmYDZh2glF5wy/Hyperleen?node-id=84-216&t=VbIbqI5V56W8jJDs-0",
+      },
+    ],
+  },
+  {
+    tabBtn: "august",
+    content: [
+      {
+        img: catImg,
+        github: "https://github.com/rinklepoonia/cat-spray-template",
+        liveLink: "https://cane-le-lait-8mbhjefmn-rinkles-projects.vercel.app/",
+        figmaLink:
+          "https://www.figma.com/design/c8JsPeBizMkBKgYJj5u3U5/Cane-Le-Lait-Email-Template-(Copy)?node-id=0-1&t=98SuyuD0nDqROZM9-0",
+      },
+      {
+        img: vpnFutureImg,
+        github: "https://github.com/rinklepoonia/vpn-future-template",
+        liveLink:
+          "https://vpn-future-9dtd4rsi6-rinkles-projects.vercel.app/future2.html",
+        figmaLink:
+          "https://www.figma.com/design/pMsdNpbS7oupIejHr0TLIB/KonnektVPN-(Copy)?node-id=2457-8262&t=isphjUrZfeFSJjWl-0",
+      },
+      {
+        img: ringSideHealth,
+        github: "https://github.com/Shreya-454/ringside-health",
+        liveLink: "",
+        figmaLink:
+          "https://www.figma.com/design/GtvEPbrognb9yk7XZrHo5O/Ringside-Health-Email-Templets?node-id=423-2252&t=swAWt9oXTeCAUSgQ-0",
+      },
+      {
+        img: pometeryImg,
+        github: "https://github.com/Ritik-455/Pometry",
+        liveLink: "https://pometry-01.vercel.app/",
+        figmaLink:
+          "https://www.figma.com/design/a0Ob8kZB2y76pryb0qGqrm/Pometry-(Copy)?node-id=0-1&t=NqdX1YjTH8HwxYYM-0",
+      },
+      {
+        img: cryptoImgTemp,
+        github: "https://github.com/AnjaliChandaRC/crypto-template",
+        liveLink:
+          "https://crypto-template-bx5ge8goq-rinkles-projects.vercel.app/",
+        figmaLink:
+          "https://www.figma.com/design/b78n5LZ9iYedg3CYLOlQBs/CryptoDispensers---Email-(Copy)?node-id=840-19381&t=tttkvGLm7l9toW9E-0",
+      },
+      {
+        img:herbertImg,
+        github: "https://github.com/Ritik-455/herbert",
+        liveLink: "",
+        figmaLink:
+          "https://www.figma.com/design/MSlZ6361z7BmSY67cqX5Xf/Herbert-(Copy)-(Copy)?node-id=0-1&t=XvuH0Dkx7Ldhxxr3-0",
       },
     ],
   },
