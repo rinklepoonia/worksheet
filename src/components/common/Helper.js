@@ -245,15 +245,14 @@ export const tabData = [
       {
         img: catImg,
         github: "https://github.com/rinklepoonia/cat-spray-template",
-        liveLink: "cane-le-lait.vercel.app",
+        liveLink: "https://cane-le-lait.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/c8JsPeBizMkBKgYJj5u3U5/Cane-Le-Lait-Email-Template-(Copy)?node-id=0-1&t=98SuyuD0nDqROZM9-0",
       },
       {
         img: vpnFutureImg,
         github: "https://github.com/rinklepoonia/vpn-future-template",
-        liveLink:
-          "https://vpn-future-9dtd4rsi6-rinkles-projects.vercel.app/future2.html",
+        liveLink: "https://vpn-future.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/pMsdNpbS7oupIejHr0TLIB/KonnektVPN-(Copy)?node-id=2457-8262&t=isphjUrZfeFSJjWl-0",
       },
