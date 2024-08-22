@@ -259,7 +259,7 @@ export const tabData = [
       {
         img: ringSideHealth,
         github: "https://github.com/Shreya-454/ringside-health",
-        liveLink: "",
+        liveLink: "https://ringside-health-1-copy.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/GtvEPbrognb9yk7XZrHo5O/Ringside-Health-Email-Templets?node-id=423-2252&t=swAWt9oXTeCAUSgQ-0",
       },
@@ -273,8 +273,7 @@ export const tabData = [
       {
         img: cryptoImgTemp,
         github: "https://github.com/AnjaliChandaRC/crypto-template",
-        liveLink:
-          "https://crypto-template-bx5ge8goq-rinkles-projects.vercel.app/",
+        liveLink: "https://crypto-template-seven.vercel.app/",
         figmaLink:
           "https://www.figma.com/design/b78n5LZ9iYedg3CYLOlQBs/CryptoDispensers---Email-(Copy)?node-id=840-19381&t=tttkvGLm7l9toW9E-0",
       },
