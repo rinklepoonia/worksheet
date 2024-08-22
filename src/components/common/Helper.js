@@ -245,7 +245,7 @@ export const tabData = [
       {
         img: catImg,
         github: "https://github.com/rinklepoonia/cat-spray-template",
-        liveLink: "https://cane-le-lait-8mbhjefmn-rinkles-projects.vercel.app/",
+        liveLink: "cane-le-lait.vercel.app",
         figmaLink:
           "https://www.figma.com/design/c8JsPeBizMkBKgYJj5u3U5/Cane-Le-Lait-Email-Template-(Copy)?node-id=0-1&t=98SuyuD0nDqROZM9-0",
       },
@@ -280,7 +280,7 @@ export const tabData = [
           "https://www.figma.com/design/b78n5LZ9iYedg3CYLOlQBs/CryptoDispensers---Email-(Copy)?node-id=840-19381&t=tttkvGLm7l9toW9E-0",
       },
       {
-        img:herbertImg,
+        img: herbertImg,
         github: "https://github.com/Ritik-455/herbert",
         liveLink: "",
         figmaLink:
