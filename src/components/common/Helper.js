@@ -252,7 +252,7 @@ export const tabData = [
       {
         img: vpnFutureImg,
         github: "https://github.com/rinklepoonia/vpn-future-template",
-        liveLink: "https://vpn-future.vercel.app/",
+        liveLink: "https://vpn-future.vercel.app/future2.html",
         figmaLink:
           "https://www.figma.com/design/pMsdNpbS7oupIejHr0TLIB/KonnektVPN-(Copy)?node-id=2457-8262&t=isphjUrZfeFSJjWl-0",
       },
