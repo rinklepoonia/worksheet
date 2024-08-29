@@ -34,8 +34,8 @@ import catImg from "../../assets/images/png/cat.png";
 import cryptoImgTemp from "../../assets/images/png/Email Template.png";
 import pometeryImg from "../../assets/images/png/pometery.png";
 import herbertImg from "../../assets/images/png/herbert.png";
-import GsapImg from "../../assets/images/png/gsap-img.jpg";
-import routingImg from '../../assets/images/png/rouiting-img.jpg'
+import gsapImg from "../../assets/images/png/gsap-img.jpg";
+import routingImgReact from "../../assets/images/png/rouiting-img.jpg";
 
 export const tabData = [
   {
@@ -279,20 +279,13 @@ export const tabData = [
         figmaLink:
           "https://www.figma.com/design/b78n5LZ9iYedg3CYLOlQBs/CryptoDispensers---Email-(Copy)?node-id=840-19381&t=tttkvGLm7l9toW9E-0",
       },
-      // {
-      //   img: herbertImg,
-      //   github: "https://github.com/Ritik-455/herbert",
-      //   liveLink: "",
-      //   figmaLink:
-      //     "https://www.figma.com/design/MSlZ6361z7BmSY67cqX5Xf/Herbert-(Copy)-(Copy)?node-id=0-1&t=XvuH0Dkx7Ldhxxr3-0",
-      // },
       {
-        img: GsapImg,
+        img: gsapImg,
         github: "https://github.com/rinklepoonia/gsap-practice",
         liveLink: "https://pratice-gsap.vercel.app/",
       },
       {
-        img: routingImg,
+        img: routingImgReact,
         github: "https://github.com/rinklepoonia/routing-practice-react",
         liveLink: "https://routing-pratice.vercel.app/",
       },
